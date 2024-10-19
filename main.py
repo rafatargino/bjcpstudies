@@ -17,10 +17,13 @@ app = Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-
 @app.route("/user/<username>")
 def users(username):
     return render_template("user.html", username=username)
+
+@app.route("/teste")
+def users():
+    return render_template("index.html")
  
 #colocar o site no ar
 if __name__ == "__main__":
