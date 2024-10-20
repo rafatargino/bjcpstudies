@@ -24,6 +24,10 @@ def users(username):
 @app.route("/teste")
 def users():
     return render_template("index.html")
+
+@app.route("/teste2")
+def users():
+    return render_template("index.html")
  
 #colocar o site no ar
 if __name__ == "__main__":
